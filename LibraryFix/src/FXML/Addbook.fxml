@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #2d3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AddbookController">
+   <children>
+      <JFXTextField fx:id="bookid" focusColor="WHITE" layoutX="201.0" layoutY="151.0" prefHeight="26.0" prefWidth="200.0" promptText="Book ID" unFocusColor="WHITE" />
+      <JFXTextField fx:id="bookname" focusColor="WHITE" layoutX="200.0" layoutY="191.0" prefHeight="26.0" prefWidth="200.0" promptText="Book Name" unFocusColor="WHITE" />
+      <JFXButton fx:id="add" layoutX="201.0" layoutY="386.0" onAction="#addAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #4c9aff;" text="Add" textFill="#eae2e2" />
+      <JFXTextField fx:id="pages" focusColor="WHITE" layoutX="200.0" layoutY="313.0" prefHeight="26.0" prefWidth="200.0" promptText="Pages" unFocusColor="WHITE" />
+      <JFXTextField fx:id="price" focusColor="WHITE" layoutX="201.0" layoutY="273.0" prefHeight="26.0" prefWidth="200.0" promptText="Price" unFocusColor="WHITE" />
+      <JFXTextField fx:id="publisher" focusColor="WHITE" layoutX="201.0" layoutY="233.0" prefHeight="26.0" prefWidth="200.0" promptText="Publisher" unFocusColor="WHITE" />
+      <JFXButton fx:id="back" layoutX="325.0" layoutY="386.0" onAction="#backAction" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: #4c9aff;" text="Back" textFill="#eae2e2" />
+      <Label layoutX="107.0" layoutY="149.0" prefHeight="35.0" prefWidth="75.0" text="Book Id" textFill="#e6e9ed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="190.0" prefHeight="35.0" prefWidth="75.0" text="Book Name" textFill="#e6e9ed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="231.0" prefHeight="35.0" prefWidth="75.0" text="Publisher" textFill="#e6e9ed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="271.0" prefHeight="35.0" prefWidth="75.0" text="Price" textFill="#e6e9ed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="107.0" layoutY="311.0" prefHeight="35.0" prefWidth="75.0" text="Pages" textFill="#e6e9ed">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="153.0" layoutY="56.0" prefHeight="54.0" prefWidth="150.0" text="Library" textFill="#4c9aff">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="259.0" layoutY="56.0" prefHeight="54.0" prefWidth="214.0" text="Management" textFill="#e6e9ed">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="added" layoutX="265.0" layoutY="436.0" prefHeight="18.0" prefWidth="75.0" text="Book Added!" textFill="WHITE" underline="true" />
+   </children>
+</AnchorPane>
